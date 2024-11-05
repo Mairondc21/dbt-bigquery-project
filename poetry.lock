@@ -914,6 +914,20 @@ MarkupSafe = ">=2.0"
 i18n = ["Babel (>=2.7)"]
 
 [[package]]
+name = "jinja2-simple-tags"
+version = "0.6.1"
+description = "Base classes for quick-and-easy template tag development"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "jinja2-simple-tags-0.6.1.tar.gz", hash = "sha256:54abf83883dcd13f8fd2ea2c42feeea8418df3640907bd5251dec5e25a6af0e3"},
+    {file = "jinja2_simple_tags-0.6.1-py2.py3-none-any.whl", hash = "sha256:7b7cfa92f6813a1e0f0b61b9efcab60e6793674753e1f784ff270542e80ae20f"},
+]
+
+[package.dependencies]
+Jinja2 = ">=2.10"
+
+[[package]]
 name = "jsonschema"
 version = "4.23.0"
 description = "An implementation of JSON Schema validation for Python"
@@ -2141,6 +2155,22 @@ tblib = "*"
 tqdm = "*"
 
 [[package]]
+name = "sqlfluff-templater-dbt"
+version = "3.2.5"
+description = "Lint your dbt project SQL"
+optional = false
+python-versions = "*"
+files = [
+    {file = "sqlfluff_templater_dbt-3.2.5-py3-none-any.whl", hash = "sha256:512d9f5b73d3d362c1983baf8c716c12a469604420c6dcc135e570a647490378"},
+    {file = "sqlfluff_templater_dbt-3.2.5.tar.gz", hash = "sha256:5b5bc4612d707e514c6892367c61ae45f61dac4818de7e2dd037089e6b131dab"},
+]
+
+[package.dependencies]
+dbt-core = ">=1.4.1"
+jinja2-simple-tags = ">=0.3.1"
+sqlfluff = "3.2.5"
+
+[[package]]
 name = "sqlparse"
 version = "0.5.1"
 description = "A non-validating SQL parser."
@@ -2278,4 +2308,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "3434d89700127daca8b78d14bdafafb3e2adebb6b8c53b1ec448f4b72fc135f0"
+content-hash = "7e575dedffe483774eff46558e01f0d83be5016fdad829dae12a47d4083de3a2"
