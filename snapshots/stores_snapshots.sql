@@ -9,8 +9,7 @@
         )
     }}
 
-    select
-        *
+    select *
     from {{ ref('stg_locations') }}
 
 {% endsnapshot %}
